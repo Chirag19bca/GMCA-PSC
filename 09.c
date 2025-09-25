@@ -1,29 +1,28 @@
+
 #include <stdio.h>
 int main()
 {
-    int n1,n2,n3;
-    printf("\n Enter no1: ");
-    scanf("%d",&n1);
-    printf("\n Enter no2: ");
-    scanf("%d",&n2);
-    printf("\n Enter no3: ");
-    scanf("%d",&n3);
+    char ch;
+    printf("\n Enter character: ");
+    scanf("%c",&ch);
 
-    if(n1>n3)
+    if(ch >= 'A' && ch <= 'Z')
     {
-        if(n1>n2)
-        {
-            printf("\n %d is maximum out of these three.",n1);
-        }
-        else
-        {
-            printf("\n %d is maximum out of these three.",n2);
-
-        }
+        printf("\n character is capital letter.");
+    }
+    else if(ch >= 'a' && ch <= 'z')
+    {
+        printf("\n character is small letter.");
+    }
+    else if(ch >= '0' && ch <= '9')
+    {
+        printf("\n character is digit.");
+        
     }
     else
     {
-        printf("\n %d is maximum out of these three.",n3);
+        printf("\n character is special character.");
     }
+    
     return 0;
 }
