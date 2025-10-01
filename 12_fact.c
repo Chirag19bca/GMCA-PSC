@@ -5,15 +5,15 @@
 #include <stdio.h>
 int main()
 {
-    int fact,n,i,sum=0;
+    float fact,n,i,sum=0;
     fact=1;
     printf("Enter number: ");
-    scanf("%d",&n);
+    scanf("%f",&n);
    for(i=1;i<=n;i++)
    {
         fact=fact * i;
-        sum=sum + fact;
+        sum=sum + (1/fact);
    }
-    printf("Sum of factorial series: %d",sum);
+    printf("Sum of factorial series: %.2f",sum);
     return 0;
 }
