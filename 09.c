@@ -1,28 +1,20 @@
-
+/*09. Write a program to read marks of a student
+      from keyboard whether the student is pass
+      or fail.(using if else)
+*/
 #include <stdio.h>
 int main()
 {
-    char ch;
-    printf("\n Enter character: ");
-    scanf("%c",&ch);
-
-    if(ch >= 'A' && ch <= 'Z')
+    int marks;
+    printf("Enter student marks: ");
+    scanf("%d",&marks);
+    if(marks>33)
     {
-        printf("\n character is capital letter.");
-    }
-    else if(ch >= 'a' && ch <= 'z')
-    {
-        printf("\n character is small letter.");
-    }
-    else if(ch >= '0' && ch <= '9')
-    {
-        printf("\n character is digit.");
-        
+        printf("Student Pass!!");
     }
     else
     {
-        printf("\n character is special character.");
+        printf("Student Fail!!");
     }
-    
     return 0;
 }

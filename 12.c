@@ -1,15 +1,24 @@
 #include <stdio.h>
-#include <math.h>
 int main()
 {
-    int sum,n,i;
-    sum=0;
-    printf("Enter number: ");
-    scanf("%d",&n);
-    for(i=n;i>0;i--)
+    int no;
+    printf("Enter marks: ");
+    scanf("%d",&no);
+    if(no>=80 || no == 100)
     {
-        sum=sum + pow(i,2);
+        printf("Distinction!");
     }
-    printf("Sum of series: %d",sum);
+    else if(no>=60 || no == 79)
+    {
+        printf("First class");
+    }
+    else if(no>=40 || no == 59)
+    {
+        printf("Second class");
+    }
+    else
+    {
+        printf("Fail!!");
+    }
     return 0;
 }
