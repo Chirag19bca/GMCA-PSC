@@ -1,38 +1,24 @@
-/*14. Write a program to read three numbers from
-      keyboard and find out maximum out of
-      three.(nested if else)
-*/
 #include <stdio.h>
-int main()
-{
-    int n1, n2, n3;
-    printf("\n Enter No1: ");
-    scanf("%d", &n1);
-    printf("\n Enter No2: ");
-    scanf("%d", &n2);
-    printf("\n Enter No3: ");
-    scanf("%d", &n3);
-    if (n1 > n3)
-    {
-        if (n1 > n2)
-        {
-            printf("given number %d is max out of three numbers.", n1);
-        }
-        else
-        {
-            printf("given number %d is max out of three numbers.", n2);
-        }
+
+int main() {
+    int n, i, max, min;
+
+    printf("Enter 10 numbers:\n");
+    scanf("%d", &n);
+    max = min = n;   // initialize both as given number
+
+    // Read the remaining 9 numbers
+    for(i = 2; i <= 10; i++) {
+        scanf("%d", &n);
+        if(n > max)
+            max = n;
+        if(n < min)
+            min = n;
     }
-    else
-    {
-        if (n2 > n3)
-        {
-            printf("given number %d is max out of three numbers.", n2);
-        }
-        else
-        {
-            printf("given number %d is max out of three numbers.", n3);
-        }
-    }
+
+    // Output results
+    printf("Maximum number = %d\n", max);
+    printf("Minimum number = %d\n", min);
+
     return 0;
 }
