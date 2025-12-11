@@ -28,6 +28,13 @@ int main()
     int no;
     printf("Enter No: ");
     scanf("%d",&no);
-    printf("%d",prime(no));
+    if(prime(no) == 1)
+    {
+        printf("%d is a Prime Number",no);
+    }
+    else
+    {
+        printf("%d is not a Prime Number",no);
+    }
     return 0;
 }

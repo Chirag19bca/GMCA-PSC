@@ -1,21 +1,27 @@
 #include <stdio.h>
-float factorial(float n)
+
+int factorial(int n)
 {
-    if(n <= 0)
-    {
-        printf("\n INVAILD NUMBER it's should be positive number");
-        return 0;
-    }
+    if(n < 0)
+        return -1;       // invalid case
+    else if(n == 0 || n == 1)
+        return 1;
     else
-    {
-        return n*factorial(n-1);
-    }
+        return n * factorial(n - 1);
 }
-float main()
+
+int main()
 {
-    float n;
-    printf("Enter Number: ");
-    scanf("%f",&n);
-    printf("\n factorial of %.2f: %.2f",n,factorial(n));
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+
+    int result = factorial(n);
+
+    if(result == -1)
+        printf("Invalid number! Enter positive integer.\n");
+    else
+        printf("Factorial of %d = %d\n", n, result);
+
     return 0;
 }

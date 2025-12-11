@@ -72,7 +72,7 @@ int *readMatrix(int rows, int cols, const char *matrixName)
     {
         for (int j = 0; j < cols; j++)
         {
-            printf("Enter element [%d][%d]: ", i + 1, j + 1);
+            printf("Enter element [%d][%d]: ", i, j);
 
             // Pointer arithmetic: (i, j) maps to index (i * cols + j)
             scanf("%d", M + (i * cols + j));

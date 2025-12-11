@@ -23,7 +23,7 @@ struct personal
 int main()
 {
     int n;
-    printf("How many Employee Details you want to store\n");
+    printf("How many Employee Details you want to store: ");
     scanf("%d",&n);
     struct personal p1[n];
     

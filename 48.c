@@ -1,9 +1,3 @@
-/*
-48. Read a text file which name is given in command line
-and print the total number of character in each line and total
-number of lines in a file.
-
-*/
 #include <stdio.h>
 
 int main(int argc, char *argv[])
@@ -11,7 +5,7 @@ int main(int argc, char *argv[])
     FILE *fp;
     char ch;
     int lineCount = 0, charCount = 0;
-
+    //make a txt file and give name at run time not compile time
     // Check if filename is provided
     if (argc != 2) {
         printf("Usage: %s <filename>\n", argv[0]);

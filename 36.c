@@ -12,6 +12,6 @@ int main()
     printf("Enter Student Name: ");
     scanf("%s",s1.Name);
     printf("Student RollNo: %d \n",s1.Rollno);
-    printf("Student RollNo: %s",s1.Name);
+    printf("Student Name: %s",s1.Name);
     return 0;
 }

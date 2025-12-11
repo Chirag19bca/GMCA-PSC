@@ -44,6 +44,12 @@ int main()
     fclose(fp1);
     fclose(fp2);
     fclose(fp3);
+    fp3=fopen("merged.txt", "r");
+    printf("\nContents of merged.txt:\n");
+    while ((ch = fgetc(fp3)) != EOF) {
+        putchar(ch);
+    }
+    fclose(fp3);
 
     return 0;
 }

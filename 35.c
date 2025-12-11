@@ -7,7 +7,7 @@ void Toupper(char str[])
 int main()
 {
     char str[100];
-    printf("\n enter string: ");
+    printf("enter string: ");
     gets(str);
     Toupper(str);
     return 0;

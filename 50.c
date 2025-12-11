@@ -1,7 +1,5 @@
-/*
-mytext.txt file have content that needs for run files program 
-*/
 #include <stdio.h>
+
 int main()
 {
     FILE *fp1, *fp2;
